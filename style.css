@@ -362,14 +362,14 @@ input:focus, textarea:focus {
         z-index: 2; /* التأكد من أن الفيديوهات فوق الطبقة الشفافة */
         display: flex;
         flex-direction: column; /* تغيير الشبكة إلى عمود */
-        gap: 50px; /* مسافة متساوية بين العناصر */
+        gap: 20px; /* مسافة متساوية بين العناصر */
         height: auto; /* السماح للشبكة بتعديل ارتفاعها تلقائيًا */
         justify-content: center; /* توسيط الشبكة أفقياً */
         align-items: center; /* توسيط الشبكة رأسياً */
     }
     
     #contrast-Vid iframe {
-        width: 100%;
+        width: 90%;
         height: auto;
     }
 
@@ -378,7 +378,7 @@ input:focus, textarea:focus {
         z-index: 2; /* التأكد من أن الفيديوهات فوق الطبقة الشفافة */
         display: flex;
         flex-direction: column; /* تغيير الشبكة إلى عمود */
-        gap: 50px; /* مسافة متساوية بين العناصر */
+        gap: 20px; /* مسافة متساوية بين العناصر */
         height: auto; /* السماح للشبكة بتعديل ارتفاعها تلقائيًا */
         justify-content: center; /* توسيط الشبكة أفقياً */
         align-items: center; /* توسيط الشبكة رأسياً */
