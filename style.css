@@ -1,0 +1,391 @@
+html, body, div, h1, header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    position: fixed; /* لجعل الـ header ثابتًا */
+    top: 0; /* تثبيت الـ header عند أعلى الصفحة */
+    z-index: 1000; /* لتجنب أن يغطيه أي عنصر آخر */
+}
+
+#first-div{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+}
+
+#second-div{
+    background-color: purple;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+#nav-txt{
+    font-family: "Varela Round", serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+#logo-txt{
+    font-family: "Pacifico", serif;
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#IMG{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#body-txt{
+    font-family: "Varela Round", serif;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 10px;
+    text-align: center;
+}
+
+#body-txt--div{
+    margin: 10px;
+    background-color: purple;
+    border-radius: 20px;
+    width: 300px;
+}
+
+#body-opt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#footer-div{
+    background-color: black;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer-txt{
+    font-family: "Varela Round", serif;
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+#SocialMedia{
+    width: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* ترتيب العناصر عموديًا */
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    font-family: 'Amiri', serif; /* أو أي خط يناسب */
+}
+
+.right {
+    flex: 1;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical; /* السماح بالتكبير الرأسي فقط */
+    min-height: 100px; /* الارتفاع الابتدائي */
+    max-height: 200px; /* الحد الأقصى للارتفاع */
+    box-sizing: border-box; /* ليشمل الـ padding في القياسات */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-family: "Varela Round", serif;
+    font-weight: 400;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical; /* السماح بالتكبير الرأسي فقط */
+    min-height: 60px; /* الارتفاع الابتدائي */
+    box-sizing: border-box; /* ليشمل الـ padding في القياسات */
+}
+
+button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: "Varela Round", serif;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+#name, #email{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(218, 218, 218);
+    border-radius: 20px;
+    padding: 10px;
+}  
+
+#message{
+    height: 100px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 20px;
+}  
+
+input:focus, textarea:focus {
+    border: opx;
+    outline: none; /* إزالة الإطار الافتراضي للمتصفح */
+}
+
+#Contrast-div{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* للتأكد من عدم خروج أي محتوى عن حدود العنصر */
+}
+
+#Contrast-IMG {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* ملء الشاشة دون تغيير نسبة الأبعاد */
+}
+
+#Contrast-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(110, 97, 97, 0.1); /* طبقة شفافة جداً بلون أبيض */
+    backdrop-filter: blur(5px); /* تأثير التشويش (الـ Blur) */
+    z-index: 1; /* التأكد من أن الطبقة فوق الصورة */
+}
+
+#video-frame {
+    position: absolute;
+    border-radius: 20px;
+    z-index: 2; /* التأكد من أن الفيديو فوق الطبقة الشفافة */
+    width: 480px; /* عرض الفيديو بالنسبة لعرض الشاشة */
+    height: 270px; /* ارتفاع الفيديو بالنسبة لارتفاع الشاشة */
+    top: 50%; /* تحديد مكان الفيديو في المنتصف رأسياً */
+    left: 50%; /* تحديد مكان الفيديو في المنتصف أفقياً */
+    transform: translate(-50%, -50%); /* لجعل الفيديو في المنتصف بالضبط */
+}
+
+#contrast-Vid{
+    position: absolute;
+    z-index: 2; /* التأكد من أن الفيديوهات فوق الطبقة الشفافة */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* تقسيم الفيديوهات على عمودين */
+    grid-template-rows: repeat(2, 1fr); /* تقسيم الفيديوهات على صفين */
+    gap: 100px; /* مسافة متساوية بين الأعمدة والصفوف */
+    height: auto; /* السماح للشبكة بتعديل ارتفاعها تلقائيًا */
+    justify-content: center; /* توسيط الشبكة أفقياً */
+    align-content: center; /* توسيط الشبكة رأسياً */
+}
+
+#contrast-Vid iframe {
+    width: 480px; /* عرض الفيديو بالنسبة لعرض الشاشة */
+    height: 270px; /* ارتفاع الفيديو بالنسبة لارتفاع الشاشة */
+    border-radius: 20px;
+    border: none;
+}
+
+#YN-div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#YN-IMG{
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* ملء الشاشة دون تغيير نسبة الأبعاد */
+}
+
+#YN-overlay{
+    position: absolute;
+    top: 100;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(110, 97, 97, 0.1); /* طبقة شفافة جداً بلون أبيض */
+    backdrop-filter: blur(5px); /* تأثير التشويش (الـ Blur) */
+    z-index: 1; /* التأكد من أن الطبقة فوق الصورة */
+}
+
+#YN-Vid{
+    position: absolute;
+    z-index: 2; /* التأكد من أن الفيديوهات فوق الطبقة الشفافة */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* تقسيم الفيديوهات على عمودين */
+    grid-template-rows: repeat(2, 1fr); /* تقسيم الفيديوهات على صفين */
+    gap: 100px; /* مسافة متساوية بين الأعمدة والصفوف */
+    height: auto; /* السماح للشبكة بتعديل ارتفاعها تلقائيًا */
+    justify-content: center; /* توسيط الشبكة أفقياً */
+    align-content: center; /* توسيط الشبكة رأسياً */
+}
+
+#YN-Vid iframe {
+    width: 270px; /* عرض الفيديو بالنسبة لعرض الشاشة */
+    height: 480px; /* ارتفاع الفيديو بالنسبة لارتفاع الشاشة */
+    border-radius: 20px;
+    border: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1000px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+#body-opt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    #nav-ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #IMG {
+        width: 250px;
+        height: 250px;
+    }
+
+    #body-txt {
+        font-size: 18px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #contrast-Vid{
+        position: absolute;
+        z-index: 2; /* التأكد من أن الفيديوهات فوق الطبقة الشفافة */
+        display: flex;
+        flex-direction: column; /* تغيير الشبكة إلى عمود */
+        gap: 50px; /* مسافة متساوية بين العناصر */
+        height: auto; /* السماح للشبكة بتعديل ارتفاعها تلقائيًا */
+        justify-content: center; /* توسيط الشبكة أفقياً */
+        align-items: center; /* توسيط الشبكة رأسياً */
+    }
+    
+    #contrast-Vid iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    #YN-Vid{
+        position: absolute;
+        z-index: 2; /* التأكد من أن الفيديوهات فوق الطبقة الشفافة */
+        display: flex;
+        flex-direction: column; /* تغيير الشبكة إلى عمود */
+        gap: 50px; /* مسافة متساوية بين العناصر */
+        height: auto; /* السماح للشبكة بتعديل ارتفاعها تلقائيًا */
+        justify-content: center; /* توسيط الشبكة أفقياً */
+        align-items: center; /* توسيط الشبكة رأسياً */
+    }
+
+    #YN-Vid iframe {
+        width: 100%;
+        height: auto;
+    }
+}
