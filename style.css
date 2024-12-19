@@ -17,7 +17,6 @@ header{
     width: 100%;
     height: 10vh;
     background-color: black;
-    position: fixed; /* لجعل الـ header ثابتًا */
     top: 0; /* تثبيت الـ header عند أعلى الصفحة */
     z-index: 1000; /* لتجنب أن يغطيه أي عنصر آخر */
 }
@@ -326,6 +325,7 @@ input:focus, textarea:focus {
 /* Media Queries for Responsiveness */
 @media (max-width: 1000px) {
     header {
+        display: flex;
         flex-direction: column;
         height: auto;
         padding: 10px;
